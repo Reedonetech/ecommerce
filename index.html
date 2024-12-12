@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/output.css">
+  <link rel="stylesheet" href="./src/input.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <nav class="flex justify-between lg:px-[130px] px-5 py-[20px] border-b-2 w-full">
+    <div class="flex gap-[30px] justify-between">
+      <div>
+        <img src="/images/logo.svg" alt="">
+      </div>
+      <ul class="lg:flex gap-[20px] text-gray-400 font-semibold hidden">
+        <li> Collections</li>
+        <li>Men</li>
+        <li>Women</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+    <div class="flex items-center justify-center gap-[30px]">
+      <img class="h-[20px] w-[20px]" src="/images/icon-cart.svg" alt="">
+      <img class="h-[30px] w-[30px]" src="/images/image-avatar.png" alt="">
+    </div>
+  </nav>
+  <div class="lg:flex lg:flex-row flex-col justify-center items-center gap-20 lg:mt-[60px]">
+    <div class="left-div">
+      <div class="product">
+        <img class="lg:w-[26vw] lg:rounded-lg" src="/images/image-product-1.jpg" alt="">
+      </div>
+      <div class="new lg:flex gap-2 pt-4  hidden">
+        <img src="/images/image-product-1-thumbnail.jpg" alt="">
+        <img src="/images/image-product-2-thumbnail.jpg" alt="">
+        <img src="/images/image-product-3-thumbnail.jpg" alt="">
+        <img src="/images/image-product-4-thumbnail.jpg" alt="">
+      </div>
+    </div>
+    <div class=" flex flex-col gap-[10px] lg:p-0 p-5">
+      <p class="font-bold uppercase text-gray-500 mt-4">Sneaker Company</p>
+      <p class=" text-[30px] font-bold">Fall Limited Edition <br> Sneakers</p>
+      <p class="lg:w-[30vw] text-gray-500 ">These low-profile sneakers are your perfect casual wear companion. Featuring a
+        durable rubber outer sole, they’ll withstand everything the weather can offer.
+      </p>
+      <div class="flex w-full justify-between items-center">
+        <div class=" flex gap-[10px] justify-center items-center">
+          <p class="font-bold text-[20px]">$125.00</p>
+          <button class="lg:w-[3vw] px-2 h-[3vh] text-[12px] font-semibold bg-black rounded text-white">50%</button>
+        </div>
+        <p class="text-[12px] lg:hidden flex line-through">$250.00</p>
+      </div>
+      <p class="text-[12px] lg:block hidden line-through">$250.00</p>
+      <div class="lg:flex lg:flex-row flex-col w-full gap-[10px] pb-[30px]">
+        <div class="bg-gray-300 lg:w-[10vw] p-3 rounded-md flex flex-row lg:h-[5vh] items-center justify-between">
+          <button type="button" class="text-[orange] rounded-l-[10px] font-bold">-</button>
+          <button type="button" class="text-[black]">0</button>
+          <button type="button" class="text-[orange] rounded-r-[10px]">+</button>
+        </div>
+        <button class="flex gap-[10px] justify-center w-full p-3 items-center lg:w-[20vw] lg:h-[5vh] rounded-[5px] bg-[orange] lg:mt-0 mt-3">
+            <img src="/images/icon-cart.svg" alt="">
+            <p class="font-bold">Add to cart</p>
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
